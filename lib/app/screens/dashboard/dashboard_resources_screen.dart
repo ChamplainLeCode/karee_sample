@@ -1,4 +1,4 @@
-import 'package:karee_sample/app/entities/utils/Style.dart';
+import '../../entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 import 'package:karee/widgets.dart';
@@ -37,27 +37,9 @@ class DashboardResourcesScreen extends RoutableWidget {
                 decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 child: Image(image: AssetImage('assets/images/config-file.png'))),
-            // Padding(
-            //     padding: EdgeInsets.symmetric(vertical: 10),
-            //     child: Text.rich(
-            //       TextSpan(text: 'eg'.translate(), children: [
-            //         TextSpan(text: '@Value', style: TextStyle(color: Colors.teal[700])),
-            //         TextSpan(text: '('),
-            //         TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
-            //         TextSpan(text: '@{server.proxy.url}', style: TextStyle(color: Style.primaryColor)),
-            //         TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
-            //         TextSpan(text: ')\n'),
-            //         TextSpan(text: 'late final ', style: TextStyle(color: Style.primaryDashboardColor)),
-            //         TextSpan(text: 'String ', style: TextStyle(color: Colors.teal[700])),
-            //         TextSpan(
-            //           text: 'serverUrl ;',
-            //         ),
-            //       ]),
-            //     )),
             Row(children: [
               Icon(Icons.settings_ethernet_rounded, color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.resources.locale.title'.translate(),
-                  //'karee.module.resources.variable.title'.translate(),
                   style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
             ]),
             Padding(
@@ -65,7 +47,6 @@ class DashboardResourcesScreen extends RoutableWidget {
                 child: Column(children: [
                   Text(
                     'karee.module.resources.locale.detail'.translate(),
-                    // "karee.module.resources.variable.detail".translate(),
                     textAlign: TextAlign.justify,
                     style: Style.moduleItemDetail,
                     textScaleFactor: 1.1,

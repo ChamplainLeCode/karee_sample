@@ -1,4 +1,4 @@
-import 'package:karee_sample/app/entities/utils/Style.dart';
+import '../../entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 import 'package:karee/widgets.dart';
@@ -33,16 +33,6 @@ class DashboardRoutageScreen extends RoutableWidget {
                   style: Style.moduleItemDetail,
                   textScaleFactor: 1.1,
                 )),
-            // Padding(
-            //     padding: EdgeInsets.symmetric(vertical: 10),
-            //     child: Text.rich(
-            //       TextSpan(text: 'eg'.translate(), children: [
-            //         TextSpan(text: '/users/', style: TextStyle(color: Colors.teal[700])),
-            //         TextSpan(text: '{userId}', style: TextStyle(color: Style.primaryColor)),
-            //         TextSpan(text: '/message/', style: TextStyle(color: Colors.teal[700])),
-            //         TextSpan(text: '{messageId}', style: TextStyle(color: Style.primaryColor)),
-            //       ]),
-            //     )),
             Container(
                 decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
@@ -50,7 +40,6 @@ class DashboardRoutageScreen extends RoutableWidget {
             Row(children: [
               Icon(Icons.integration_instructions_outlined, color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.routage.internal.title'.translate(),
-                  //'karee.module.routage.variable.title'.translate(),
                   style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
             ]),
             Padding(
@@ -58,7 +47,6 @@ class DashboardRoutageScreen extends RoutableWidget {
                 child: Column(children: [
                   Text(
                     "    " + 'karee.module.routage.internal.detail'.translate(),
-                    // "karee.module.routage.variable.detail".translate(),
                     textAlign: TextAlign.justify,
                     style: Style.moduleItemDetail,
                     textScaleFactor: 1.1,

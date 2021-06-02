@@ -1,4 +1,4 @@
-import 'package:karee_sample/app/entities/utils/Style.dart';
+import '../../entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 import 'package:karee/widgets.dart';

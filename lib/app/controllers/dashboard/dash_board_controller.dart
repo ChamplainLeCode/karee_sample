@@ -1,7 +1,7 @@
-import 'package:karee_sample/app/screens/dashboard/dashboard_resources_screen.dart';
-import 'package:karee_sample/app/screens/dashboard/dashboard_routage_screen.dart';
-import 'package:karee_sample/app/screens/dashboard/dashboard_screen_screen.dart';
-import 'package:karee_sample/app/screens/dashboard/dashboard_services_screen.dart';
+import '../../screens/dashboard/dashboard_resources_screen.dart';
+import '../../screens/dashboard/dashboard_routage_screen.dart';
+import '../../screens/dashboard/dashboard_screen_screen.dart';
+import '../../screens/dashboard/dashboard_services_screen.dart';
 
 import '../../screens/dashboard/dashboard_constants_screen.dart';
 import '../../screens/dashboard/dashboard_controllers_screen.dart';
@@ -10,11 +10,6 @@ import 'package:karee/annotations.dart';
 import 'package:karee/navigation.dart';
 
 /// Generated Karee Controller
-/// @email champlainmarius20@gmail.com
-/// @github ChamplainLeCode
-///
-///
-///
 ///
 /// `DashBoard` is set as Controller
 @Controller

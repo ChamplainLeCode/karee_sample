@@ -3,9 +3,9 @@
 // @dart = 2.12
 
 import 'dart:core';
-import 'package:karee_sample/app/controllers/dashboard/dash_board_controller.dart' as prefix2;
-import 'package:karee_sample/app/controllers/home/home_controller.dart' as prefix3;
-import 'package:karee_sample/app/controllers/settings/settings_controller.dart' as prefix1;
+import '../app/controllers/dashboard/dash_board_controller.dart' as prefix2;
+import '../app/controllers/home/home_controller.dart' as prefix3;
+import '../app/controllers/settings/settings_controller.dart' as prefix1;
 import 'package:karee_inject/src/annotations/controller.dart' as prefix0;
 
 // ignore_for_file: prefer_adjacent_string_concatenation

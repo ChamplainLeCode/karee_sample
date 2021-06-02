@@ -1,5 +1,4 @@
 import '../../../components/icon_badge.dart';
-//import '../../../entities/user.dart';
 import '../../../entities/utils/Style.dart';
 import '../../../entities/utils/utils.dart';
 import 'package:flutter/material.dart';
