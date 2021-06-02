@@ -18,4 +18,3 @@
     ```bash
       karee source && flutter run
     ```
-    Ou
