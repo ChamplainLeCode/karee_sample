@@ -19,14 +19,14 @@ class _DashboardAppBarState extends ComponentState<DashboardAppBar> {
   @override
   Widget builder(BuildContext context) {
     return Container(
-      color: Style.primaryDashboardColor,
+      color: Style.dashboardSelectedMenu,
       child: Column(
         children: [
           Container(
               alignment: Alignment.center,
               padding: mediaQuery.padding,
               height: 50 + mediaQuery.padding.top,
-              color: Style.primaryDashboardColor,
+              color: Style.dashboardSelectedMenu,
               width: screenSize.width - (Utils.isMobileView ? 0 : 300),
               child: RichText(
                 text: TextSpan(children: [

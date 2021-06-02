@@ -10,14 +10,15 @@ class DashboardAppBarTool extends StatelessComponent {
   Widget builder(BuildContext context) {
     return Container(
         height: 50,
-        color: Style.primary2DashboardColor,
+        color: Style.primaryDashboardDarkColor,
         padding: EdgeInsets.only(right: 20),
         child: AppBar(
           primary: false,
-          backgroundColor: Style.primary2DashboardColor,
+          backgroundColor: Style.primaryDashboardDarkColor,
           elevation: 0,
           actions: [
-            Align(
+            Container(
+                margin: EdgeInsets.symmetric(horizontal: 10),
                 alignment: Alignment.center,
                 child: IconBadge(
                   callBack: () => print('callback'),
@@ -27,7 +28,8 @@ class DashboardAppBarTool extends StatelessComponent {
                   badgeColor: Style.successColor,
                   size: 25,
                 )),
-            Align(
+            Container(
+                margin: EdgeInsets.symmetric(horizontal: 10),
                 alignment: Alignment.center,
                 child: IconBadge(
                   callBack: () => print('callback'),
@@ -37,7 +39,8 @@ class DashboardAppBarTool extends StatelessComponent {
                   badgeColor: Style.warningColor,
                   size: 25,
                 )),
-            Align(
+            Container(
+                margin: EdgeInsets.symmetric(horizontal: 10),
                 alignment: Alignment.center,
                 child: IconBadge(
                   callBack: () => print('callback'),

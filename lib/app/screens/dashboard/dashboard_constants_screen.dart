@@ -1,4 +1,4 @@
-import 'package:example/app/entities/utils/Style.dart';
+import 'package:karee_sample/app/entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/widgets.dart';
 import 'package:karee/internationalization.dart';
@@ -27,7 +27,7 @@ class DashboardConstantsScreen extends RoutableWidget {
                   style: Style.moduleDetailStyle,
                 )),
             Row(children: [
-              Icon(Icons.verified_user, color: Style.dashboardSelectedMenuBorder),
+              Icon(Icons.verified_user, color: Style.dashboardSelectedMenu),
               Text.rich(TextSpan(children: [
                 TextSpan(
                     text: '  KareeInstanceProfile',
@@ -47,14 +47,14 @@ class DashboardConstantsScreen extends RoutableWidget {
                   'karee.module.constant.profile.prod.detail'.translate(),
                   textAlign: TextAlign.justify,
                   style: Style.moduleItemDetail,
-                  textScaleFactor: 1.3,
+                  textScaleFactor: 1.1,
                 )),
             Container(
-                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 child: Image(image: AssetImage('assets/images/error-prod.png'))),
             Row(children: [
-              Icon(Icons.developer_mode, color: Style.dashboardSelectedMenuBorder),
+              Icon(Icons.developer_mode, color: Style.dashboardSelectedMenu),
               Text.rich(TextSpan(children: [
                 TextSpan(
                     text: '  KareeInstanceProfile',
@@ -74,14 +74,14 @@ class DashboardConstantsScreen extends RoutableWidget {
                   'karee.module.constant.profile.dev.detail'.translate(),
                   textAlign: TextAlign.justify,
                   style: Style.moduleItemDetail,
-                  textScaleFactor: 1.3,
+                  textScaleFactor: 1.1,
                 )),
             Container(
-                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 child: Image(image: AssetImage('assets/images/error-dev.png'))),
             Row(children: [
-              Icon(Icons.add_to_home_screen_outlined, color: Style.dashboardSelectedMenuBorder),
+              Icon(Icons.add_to_home_screen_outlined, color: Style.dashboardSelectedMenu),
               Text.rich(TextSpan(children: [
                 TextSpan(
                     text: '  KareeConstants',
@@ -101,7 +101,7 @@ class DashboardConstantsScreen extends RoutableWidget {
                   'karee.module.constant.errorScreenName.detail'.translate(),
                   textAlign: TextAlign.justify,
                   style: Style.moduleItemDetail,
-                  textScaleFactor: 1.3,
+                  textScaleFactor: 1.1,
                 ))
           ])),
     );

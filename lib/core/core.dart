@@ -1,4 +1,4 @@
-// import 'package:example/core/extensions.dart';
+// import 'package:karee_sample/core/extensions.dart';
 import 'package:flutter/widgets.dart';
 import 'app.module.dart';
 import '../app/routes/Routes.dart';

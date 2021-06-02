@@ -1,4 +1,4 @@
-import 'package:example/app/entities/utils/Style.dart';
+import 'package:karee_sample/app/entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/internationalization.dart';
 import 'package:karee/widgets.dart';
@@ -21,9 +21,9 @@ class DashboardResourcesScreen extends RoutableWidget {
                   style: Style.moduleDetailStyle,
                 )),
             Row(children: [
-              Icon(Icons.miscellaneous_services, color: Style.dashboardSelectedMenuBorder),
+              Icon(Icons.miscellaneous_services, color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.resources.config.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenuBorder, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -31,34 +31,34 @@ class DashboardResourcesScreen extends RoutableWidget {
                   'karee.module.resources.config.detail'.translate(),
                   textAlign: TextAlign.justify,
                   style: Style.moduleItemDetail,
-                  textScaleFactor: 1.3,
+                  textScaleFactor: 1.1,
                 )),
             Container(
-                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 child: Image(image: AssetImage('assets/images/config-file.png'))),
-            Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text.rich(
-                  TextSpan(text: 'eg'.translate(), children: [
-                    TextSpan(text: '@Value', style: TextStyle(color: Colors.teal[700])),
-                    TextSpan(text: '('),
-                    TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
-                    TextSpan(text: '@{server.proxy.url}', style: TextStyle(color: Style.primaryColor)),
-                    TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
-                    TextSpan(text: ')\n'),
-                    TextSpan(text: 'late final ', style: TextStyle(color: Style.primaryDashboardColor)),
-                    TextSpan(text: 'String ', style: TextStyle(color: Colors.teal[700])),
-                    TextSpan(
-                      text: 'serverUrl ;',
-                    ),
-                  ]),
-                )),
+            // Padding(
+            //     padding: EdgeInsets.symmetric(vertical: 10),
+            //     child: Text.rich(
+            //       TextSpan(text: 'eg'.translate(), children: [
+            //         TextSpan(text: '@Value', style: TextStyle(color: Colors.teal[700])),
+            //         TextSpan(text: '('),
+            //         TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
+            //         TextSpan(text: '@{server.proxy.url}', style: TextStyle(color: Style.primaryColor)),
+            //         TextSpan(text: '"', style: TextStyle(color: Style.primaryColor)),
+            //         TextSpan(text: ')\n'),
+            //         TextSpan(text: 'late final ', style: TextStyle(color: Style.primaryDashboardColor)),
+            //         TextSpan(text: 'String ', style: TextStyle(color: Colors.teal[700])),
+            //         TextSpan(
+            //           text: 'serverUrl ;',
+            //         ),
+            //       ]),
+            //     )),
             Row(children: [
-              Icon(Icons.settings_ethernet_rounded, color: Style.dashboardSelectedMenuBorder),
+              Icon(Icons.settings_ethernet_rounded, color: Style.dashboardSelectedMenu),
               Text('  ' + 'karee.module.resources.locale.title'.translate(),
                   //'karee.module.resources.variable.title'.translate(),
-                  style: TextStyle(color: Style.dashboardSelectedMenuBorder, fontWeight: FontWeight.w400, fontSize: 18))
+                  style: TextStyle(color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 18))
             ]),
             Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -68,42 +68,42 @@ class DashboardResourcesScreen extends RoutableWidget {
                     // "karee.module.resources.variable.detail".translate(),
                     textAlign: TextAlign.justify,
                     style: Style.moduleItemDetail,
-                    textScaleFactor: 1.3,
+                    textScaleFactor: 1.1,
                   ),
                   Padding(
                       padding: EdgeInsets.only(left: 20, top: 20),
                       child: Row(children: [
-                        Icon(Icons.language, color: Style.dashboardSelectedMenuBorder),
+                        Icon(Icons.language, color: Style.dashboardSelectedMenu),
                         Text('  ' + 'karee.module.resources.locale.step1'.translate(),
                             style: TextStyle(
-                                color: Style.dashboardSelectedMenuBorder, fontWeight: FontWeight.w400, fontSize: 16))
+                                color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 16))
                       ])),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                       margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                       child: Image(image: AssetImage('assets/images/lang.png'))),
                   Padding(
                       padding: EdgeInsets.only(left: 20, top: 20),
                       child: Row(children: [
-                        Icon(Icons.translate, color: Style.dashboardSelectedMenuBorder),
+                        Icon(Icons.translate, color: Style.dashboardSelectedMenu),
                         Text('  ' + 'karee.module.resources.locale.step2'.translate(),
                             style: TextStyle(
-                                color: Style.dashboardSelectedMenuBorder, fontWeight: FontWeight.w400, fontSize: 16))
+                                color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 16))
                       ])),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                       margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                       child: Image(image: AssetImage('assets/images/translations.png'))),
                   Padding(
                       padding: EdgeInsets.only(left: 20, top: 20),
                       child: Row(children: [
-                        Icon(Icons.edit_outlined, color: Style.dashboardSelectedMenuBorder),
+                        Icon(Icons.edit_outlined, color: Style.dashboardSelectedMenu),
                         Text('  ' + 'karee.module.resources.locale.step3'.translate(),
                             style: TextStyle(
-                                color: Style.dashboardSelectedMenuBorder, fontWeight: FontWeight.w400, fontSize: 16))
+                                color: Style.dashboardSelectedMenu, fontWeight: FontWeight.w400, fontSize: 16))
                       ])),
                   Container(
-                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                      decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                       margin: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                       child: Image(image: AssetImage('assets/images/traductions-usage.png'))),
                 ])),

@@ -40,7 +40,7 @@ class IconBadge extends StatelessComponent {
               child: IconButton(
                 icon: Icon(
                   icon,
-                  size: 15,
+                  size: 20,
                   color: color,
                 ),
                 onPressed: () => callBack(),

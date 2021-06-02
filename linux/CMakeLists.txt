@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "example")
-set(APPLICATION_ID "com.karee.app.example.example")
+set(BINARY_NAME "karee_sample")
+set(APPLICATION_ID "com.karee.app.karee_sample.karee_sample")
 
 cmake_policy(SET CMP0063 NEW)
 

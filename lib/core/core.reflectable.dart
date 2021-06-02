@@ -3,11 +3,9 @@
 // @dart = 2.12
 
 import 'dart:core';
-import 'package:example/app/controllers/dashboard/dash_board_controller.dart'
-    as prefix2;
-import 'package:example/app/controllers/home/home_controller.dart' as prefix3;
-import 'package:example/app/controllers/settings/settings_controller.dart'
-    as prefix1;
+import 'package:karee_sample/app/controllers/dashboard/dash_board_controller.dart' as prefix2;
+import 'package:karee_sample/app/controllers/home/home_controller.dart' as prefix3;
+import 'package:karee_sample/app/controllers/settings/settings_controller.dart' as prefix1;
 import 'package:karee_inject/src/annotations/controller.dart' as prefix0;
 
 // ignore_for_file: prefer_adjacent_string_concatenation
@@ -42,14 +40,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
             -1,
             const <int>[-1],
             null,
-            {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r'index': 0
-            }),
+            {r'==': 1, r'toString': 0, r'noSuchMethod': 1, r'hashCode': 0, r'runtimeType': 0, r'index': 0}),
         r.NonGenericClassMirrorImpl(
             r'DashBoardController',
             r'.DashBoardController',
@@ -98,22 +89,11 @@ final _data = <r.Reflectable, r.ReflectorData>{
             -1,
             const <int>[-1],
             null,
-            {
-              r'==': 1,
-              r'toString': 0,
-              r'noSuchMethod': 1,
-              r'hashCode': 0,
-              r'runtimeType': 0,
-              r'index': 0
-            })
+            {r'==': 1, r'toString': 0, r'noSuchMethod': 1, r'hashCode': 0, r'runtimeType': 0, r'index': 0})
       ],
       null,
       null,
-      <Type>[
-        prefix1.SettingsController,
-        prefix2.DashBoardController,
-        prefix3.HomeController
-      ],
+      <Type>[prefix1.SettingsController, prefix2.DashBoardController, prefix3.HomeController],
       3,
       {
         r'==': (dynamic instance) => (x) => instance == x,
@@ -129,10 +109,7 @@ final _data = <r.Reflectable, r.ReflectorData>{
         r'scanner': (dynamic instance) => instance.scanner,
         r'userService': (dynamic instance) => instance.userService
       },
-      {
-        r'userService=': (dynamic instance, value) =>
-            instance.userService = value
-      },
+      {r'userService=': (dynamic instance, value) => instance.userService = value},
       null,
       [
         const [0, 0, null],

@@ -26,7 +26,7 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
         child: Scaffold(
             body: Container(
                 alignment: Alignment.center,
-                color: Style.primaryColor.withOpacity(0.125),
+                color: Style.dashboardSelectedMenu, // Style.primaryColor.withOpacity(0.125),
                 padding: EdgeInsets.only(left: 10, right: 10),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
@@ -37,13 +37,13 @@ class _HomeScreenState extends ScreenState<HomeScreen> {
                       Image(image: AssetImage('assets/karee.png', package: 'karee')),
                       Text(
                         'Another way to build Beautiful Application using Flutter with MVC',
-                        style: TextStyle(fontSize: 30, fontWeight: FontWeight.w200),
+                        style: TextStyle(fontSize: 30, color: Style.whiteText, fontWeight: FontWeight.w200),
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(height: 20),
                       Text(
                         'Verision v2.1.0',
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 20, color: Style.whiteText),
                       ),
                       SizedBox(height: 20),
                       ElevatedButton(

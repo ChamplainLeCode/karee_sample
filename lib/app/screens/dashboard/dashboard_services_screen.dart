@@ -1,4 +1,4 @@
-import 'package:example/app/entities/utils/Style.dart';
+import 'package:karee_sample/app/entities/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:karee/widgets.dart';
 import 'package:karee/internationalization.dart';
@@ -25,7 +25,7 @@ class DashboardServicesScreen extends RoutableWidget {
                 )),
             Text('eg'.translate()),
             Container(
-                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenuBorder, width: 2)),
+                decoration: BoxDecoration(border: Border.all(color: Style.dashboardSelectedMenu, width: 2)),
                 margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                 child: Image(image: AssetImage('assets/images/service-def.png'))),
           ])),
